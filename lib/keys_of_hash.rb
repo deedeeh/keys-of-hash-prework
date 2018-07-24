@@ -8,11 +8,3 @@
 #     result
 #   end
 # end
-
-class Hash
-  def keys_of(*args)
-    result = []
-    result << map {|key, value| args.include?(value) ? key : nil }
-    binding.pry
-  end
-end
